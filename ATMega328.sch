@@ -25,7 +25,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20w
 	1    0    0    -1  
 $EndComp
 Text HLabel 5100 2250 0    50   Input ~ 0
-5V
+3v3
 $Comp
 L power:GND #PWR0109
 U 1 1 60CB4B3E
@@ -40,19 +40,12 @@ $EndComp
 Wire Wire Line
 	5800 5750 5800 5400
 Wire Wire Line
-	5100 2250 5200 2250
-Wire Wire Line
 	5900 2400 5900 2250
 Wire Wire Line
 	5800 2400 5800 2250
 Connection ~ 5800 2250
 Wire Wire Line
 	5800 2250 5900 2250
-Wire Wire Line
-	5200 2700 5200 2250
-Connection ~ 5200 2250
-Wire Wire Line
-	5200 2250 5800 2250
 $Comp
 L Device:C C3
 U 1 1 60CB852B
@@ -82,7 +75,7 @@ Connection ~ 3850 4650
 Wire Wire Line
 	3850 4650 3450 4650
 Text HLabel 3850 4250 1    50   Input ~ 0
-5V
+3v3
 Wire Wire Line
 	3850 4250 3850 4350
 $Comp
@@ -165,7 +158,7 @@ MOSI
 Text Label 9100 2350 0    50   ~ 0
 MOSI
 Text HLabel 8600 1950 1    50   Input ~ 0
-5V
+3v3
 $Comp
 L power:GND #PWR0113
 U 1 1 60CEAD91
@@ -215,18 +208,6 @@ Wire Wire Line
 	6400 2800 6500 2800
 Wire Wire Line
 	6400 2900 6500 2900
-Text HLabel 6800 3000 2    50   Input ~ 0
-11
-Text HLabel 6800 3100 2    50   Input ~ 0
-12
-Text HLabel 6800 3200 2    50   Input ~ 0
-13
-Wire Wire Line
-	6400 3000 6800 3000
-Wire Wire Line
-	6400 3100 6800 3100
-Wire Wire Line
-	6400 3200 6800 3200
 Text HLabel 5100 2900 0    50   Input ~ 0
 A6
 Text HLabel 5100 3000 0    50   Input ~ 0
@@ -241,7 +222,7 @@ U 1 1 60CC7094
 P 8700 2450
 F 0 "J2" H 8371 2546 50  0000 R CNN
 F 1 "AVR-ISP-6" H 8371 2455 50  0000 R CNN
-F 2 "" V 8450 2500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" V 8450 2500 50  0001 C CNN
 F 3 " ~" H 7425 1900 50  0001 C CNN
 	1    8700 2450
 	1    0    0    -1  
@@ -255,17 +236,6 @@ F 1 "Crystal_GND24" H 3400 3250 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 3650 2950 50  0001 C CNN
 F 3 "~" H 3650 2950 50  0001 C CNN
 	1    3650 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C5
-U 1 1 60E73517
-P 3050 4500
-F 0 "C5" H 3165 4546 50  0000 L CNN
-F 1 "100n" H 3165 4455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 3088 4350 50  0001 C CNN
-F 3 "~" H 3050 4500 50  0001 C CNN
-	1    3050 4500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -290,12 +260,6 @@ F 3 "~" H 4000 3100 50  0001 C CNN
 	1    4000 3100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3050 4350 3450 4350
-Connection ~ 3450 4350
-Wire Wire Line
-	3050 4650 3450 4650
-Connection ~ 3450 4650
 Wire Wire Line
 	3200 2950 3500 2950
 Wire Wire Line
@@ -329,4 +293,33 @@ Wire Wire Line
 Connection ~ 3850 3300
 Wire Wire Line
 	3850 3300 4000 3300
+$Comp
+L Device:C C8
+U 1 1 618F06A7
+P 4300 4500
+F 0 "C8" H 4415 4546 50  0000 L CNN
+F 1 "100n" H 4415 4455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 4338 4350 50  0001 C CNN
+F 3 "~" H 4300 4500 50  0001 C CNN
+	1    4300 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4650 3850 4650
+Wire Wire Line
+	4300 4350 4300 4250
+Text Label 4300 4250 0    50   ~ 0
+aref
+Wire Wire Line
+	5100 2250 5800 2250
+Wire Wire Line
+	5200 2700 4900 2700
+Text Label 4900 2700 0    50   ~ 0
+aref
+Wire Wire Line
+	6400 3000 6600 3000
+Wire Wire Line
+	6400 3100 6600 3100
+Wire Wire Line
+	6400 3200 6600 3200
 $EndSCHEMATC
