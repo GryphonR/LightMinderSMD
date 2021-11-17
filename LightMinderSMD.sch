@@ -16,23 +16,23 @@ $EndDescr
 $Comp
 L Device:R R1
 U 1 1 60C32AF5
-P 1700 2800
-F 0 "R1" H 1770 2846 50  0000 L CNN
-F 1 "18k" H 1770 2755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0201_0603Metric" V 1630 2800 50  0001 C CNN
-F 3 "~" H 1700 2800 50  0001 C CNN
-	1    1700 2800
+P 1700 2350
+F 0 "R1" H 1770 2396 50  0000 L CNN
+F 1 "18k" H 1770 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 1630 2350 50  0001 C CNN
+F 3 "~" H 1700 2350 50  0001 C CNN
+	1    1700 2350
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R3
 U 1 1 60C33423
-P 1900 3050
-F 0 "R3" H 1970 3096 50  0000 L CNN
-F 1 "1.3k" H 1970 3005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0201_0603Metric" V 1830 3050 50  0001 C CNN
-F 3 "~" H 1900 3050 50  0001 C CNN
-	1    1900 3050
+P 1900 2600
+F 0 "R3" H 1970 2646 50  0000 L CNN
+F 1 "1.3k" H 1970 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 1830 2600 50  0001 C CNN
+F 3 "~" H 1900 2600 50  0001 C CNN
+	1    1900 2600
 	1    0    0    -1  
 $EndComp
 Text GLabel 3350 950  0    50   Input ~ 0
@@ -71,9 +71,9 @@ F 3 "~" H 1900 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1850 2800 1900 2800
+	1850 2350 1900 2350
 Wire Wire Line
-	1900 2800 1900 2900
+	1900 2350 1900 2450
 Wire Wire Line
 	1850 4050 1900 4050
 Wire Wire Line
@@ -81,12 +81,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0102
 U 1 1 60C44517
-P 1900 3200
-F 0 "#PWR0102" H 1900 2950 50  0001 C CNN
-F 1 "GND" H 1905 3027 50  0000 C CNN
-F 2 "" H 1900 3200 50  0001 C CNN
-F 3 "" H 1900 3200 50  0001 C CNN
-	1    1900 3200
+P 1900 2750
+F 0 "#PWR0102" H 1900 2500 50  0001 C CNN
+F 1 "GND" H 1905 2577 50  0000 C CNN
+F 2 "" H 1900 2750 50  0001 C CNN
+F 3 "" H 1900 2750 50  0001 C CNN
+	1    1900 2750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -103,7 +103,7 @@ $EndComp
 Text GLabel 1550 4050 0    50   Input ~ 0
 DippedBeam_12v
 Connection ~ 1900 4050
-Connection ~ 1900 2800
+Connection ~ 1900 2350
 Text GLabel 8550 1150 1    50   Input ~ 0
 3v3
 Wire Wire Line
@@ -145,30 +145,30 @@ F 3 "~" H 1700 4050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Sheet
-S 4800 5050 850  1750
+S 4450 3250 850  1750
 U 60CB0BF0
 F0 "Sheet60CB0BEF" 50
 F1 "ATMega328.sch" 50
-F2 "A0" I L 4800 5400 50 
-F3 "A1" I L 4800 5500 50 
-F4 "A2" I L 4800 5600 50 
-F5 "A3" I L 4800 5700 50 
-F6 "A4" I L 4800 5800 50 
-F7 "A5" I L 4800 5900 50 
-F8 "RX" I R 5650 5200 50 
-F9 "TX" I R 5650 5300 50 
-F10 "2" I R 5650 5400 50 
-F11 "3" I R 5650 5500 50 
-F12 "4" I R 5650 5600 50 
-F13 "5" I R 5650 5700 50 
-F14 "6" I R 5650 5800 50 
-F15 "7" I R 5650 5900 50 
-F16 "8" I R 5650 6000 50 
-F17 "9" I R 5650 6100 50 
-F18 "10" I R 5650 6200 50 
-F22 "A6" I L 4800 6000 50 
-F23 "A7" I L 4800 6100 50 
-F24 "3v3" I L 4800 5150 50 
+F2 "A0" I L 4450 3600 50 
+F3 "A1" I L 4450 3700 50 
+F4 "A2" I L 4450 3800 50 
+F5 "A3" I L 4450 3900 50 
+F6 "A4" I L 4450 4000 50 
+F7 "A5" I L 4450 4100 50 
+F8 "RX" I R 5300 3400 50 
+F9 "TX" I R 5300 3500 50 
+F10 "2" I R 5300 3600 50 
+F11 "3" I R 5300 3700 50 
+F12 "4" I R 5300 3800 50 
+F13 "5" I R 5300 3900 50 
+F14 "6" I R 5300 4000 50 
+F15 "7" I R 5300 4100 50 
+F16 "8" I R 5300 4200 50 
+F17 "9" I R 5300 4300 50 
+F18 "10" I R 5300 4400 50 
+F22 "A6" I L 4450 4200 50 
+F23 "A7" I L 4450 4300 50 
+F24 "3v3" I L 4450 3350 50 
 $EndSheet
 Text GLabel 7500 950  2    50   Input ~ 0
 3v3
@@ -199,25 +199,25 @@ Wire Wire Line
 Wire Wire Line
 	5150 950  5150 1200
 Wire Wire Line
-	4650 5400 4800 5400
+	4300 3600 4450 3600
 Wire Wire Line
-	4650 5500 4800 5500
+	4300 3700 4450 3700
 Wire Wire Line
-	4650 5600 4800 5600
-Text GLabel 4650 5000 1    50   Input ~ 0
+	4300 3800 4450 3800
+Text GLabel 4300 3200 1    50   Input ~ 0
 3v3
 Wire Wire Line
-	4650 5000 4650 5150
+	4300 3200 4300 3350
 Wire Wire Line
-	4800 5150 4650 5150
-Text Label 5850 5300 0    50   ~ 0
+	4450 3350 4300 3350
+Text Label 5500 3500 0    50   ~ 0
 TX
-Text Label 5850 5200 0    50   ~ 0
+Text Label 5500 3400 0    50   ~ 0
 RX
 Wire Wire Line
-	5850 5200 5650 5200
+	5500 3400 5300 3400
 Wire Wire Line
-	5850 5300 5650 5300
+	5500 3500 5300 3500
 Wire Wire Line
 	6350 1900 6350 1500
 Wire Wire Line
@@ -226,17 +226,17 @@ Wire Wire Line
 	5150 1500 5150 1900
 Connection ~ 5150 1900
 Wire Wire Line
-	4650 5700 4800 5700
+	4300 3900 4450 3900
 Text Notes 8150 2000 0    50   ~ 0
 Pullup for LDR
 Text Notes 1800 7450 0    50   ~ 0
 Connector
 Text Label 4250 950  0    50   ~ 0
 12vFused
-Text Label 1100 2800 0    50   ~ 0
+Text Label 1100 2350 0    50   ~ 0
 12vFused
 Wire Wire Line
-	1100 2800 1550 2800
+	1100 2350 1550 2350
 $Comp
 L Device:D_Zener D1
 U 1 1 60D826C6
@@ -280,12 +280,12 @@ F 10 "70519388" H 4050 200 50  0001 L CNN "Allied_Number"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5650 5500 5850 5500
+	5300 3700 5500 3700
 Wire Wire Line
-	5650 5600 5850 5600
-Text Label 5850 5500 0    50   ~ 0
+	5300 3800 5500 3800
+Text Label 5500 3700 0    50   ~ 0
 Light_Out_LED
-Text Label 5850 5600 0    50   ~ 0
+Text Label 5500 3800 0    50   ~ 0
 Error_LED
 Text Label 1750 5350 0    50   ~ 0
 RX
@@ -501,7 +501,7 @@ P 9500 1150
 AR Path="/618D9475/618FD111" Ref="R?"  Part="1" 
 AR Path="/618FD111" Ref="R13"  Part="1" 
 F 0 "R13" H 9570 1196 50  0000 L CNN
-F 1 "R" H 9570 1105 50  0000 L CNN
+F 1 "750" H 9570 1105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0201_0603Metric" V 9430 1150 50  0001 C CNN
 F 3 "~" H 9500 1150 50  0001 C CNN
 	1    9500 1150
@@ -529,7 +529,7 @@ P 9000 1150
 AR Path="/618D9475/618FD11E" Ref="R?"  Part="1" 
 AR Path="/618FD11E" Ref="R11"  Part="1" 
 F 0 "R11" H 9070 1196 50  0000 L CNN
-F 1 "R" H 9070 1105 50  0000 L CNN
+F 1 "100" H 9070 1105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0201_0603Metric" V 8930 1150 50  0001 C CNN
 F 3 "~" H 9000 1150 50  0001 C CNN
 	1    9000 1150
@@ -557,7 +557,7 @@ P 10000 1150
 AR Path="/618D9475/618FD12C" Ref="R?"  Part="1" 
 AR Path="/618FD12C" Ref="R14"  Part="1" 
 F 0 "R14" H 10070 1196 50  0000 L CNN
-F 1 "R" H 10070 1105 50  0000 L CNN
+F 1 "100" H 10070 1105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0201_0603Metric" V 9930 1150 50  0001 C CNN
 F 3 "~" H 10000 1150 50  0001 C CNN
 	1    10000 1150
@@ -585,7 +585,7 @@ P 10500 1150
 AR Path="/618D9475/618FD139" Ref="R?"  Part="1" 
 AR Path="/618FD139" Ref="R15"  Part="1" 
 F 0 "R15" H 10570 1196 50  0000 L CNN
-F 1 "R" H 10570 1105 50  0000 L CNN
+F 1 "100" H 10570 1105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0201_0603Metric" V 10430 1150 50  0001 C CNN
 F 3 "~" H 10500 1150 50  0001 C CNN
 	1    10500 1150
@@ -651,12 +651,12 @@ Wire Wire Line
 Wire Wire Line
 	10000 1850 10500 1850
 Wire Wire Line
-	1900 2800 1900 2700
+	1900 2350 1900 2250
 Wire Wire Line
 	1900 4050 1900 3950
 Text GLabel 1900 3650 1    50   Input ~ 0
 3v3
-Text GLabel 1900 2400 1    50   Input ~ 0
+Text GLabel 1900 1950 1    50   Input ~ 0
 3v3
 $Comp
 L Connector:Conn_01x04_Female J1
@@ -681,10 +681,10 @@ F 3 "~" H 2100 6850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 5800 4650 5800
+	4450 4000 4300 4000
 Wire Wire Line
-	5650 5400 5850 5400
-Text Label 5850 5400 0    50   ~ 0
+	5300 3600 5500 3600
+Text Label 5500 3600 0    50   ~ 0
 Light_Out_Logic
 Text GLabel 7500 3400 0    50   Input ~ 0
 DippedBeam_12v
@@ -693,12 +693,12 @@ DippedBeam_12v
 $Comp
 L Device:D_Schottky D4
 U 1 1 61982702
-P 1900 2550
-F 0 "D4" V 1854 2630 50  0000 L CNN
-F 1 "D_Schottky" V 1945 2630 50  0000 L CNN
-F 2 "Diode_SMD:D_SOT-23_ANK" H 1900 2550 50  0001 C CNN
-F 3 "~" H 1900 2550 50  0001 C CNN
-	1    1900 2550
+P 1900 2100
+F 0 "D4" V 1854 2180 50  0000 L CNN
+F 1 "D_Schottky" V 1945 2180 50  0000 L CNN
+F 2 "Diode_SMD:D_SOT-23_ANK" H 1900 2100 50  0001 C CNN
+F 3 "~" H 1900 2100 50  0001 C CNN
+	1    1900 2100
 	0    1    1    0   
 $EndComp
 $Comp
@@ -715,18 +715,18 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 6198C42D
-P 2250 3050
+P 2250 2600
 AR Path="/60CB0BF0/6198C42D" Ref="C?"  Part="1" 
 AR Path="/6198C42D" Ref="C5"  Part="1" 
-F 0 "C5" H 2365 3096 50  0000 L CNN
-F 1 "470nF" H 2365 3005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 2288 2900 50  0001 C CNN
-F 3 "~" H 2250 3050 50  0001 C CNN
-	1    2250 3050
+F 0 "C5" H 2365 2646 50  0000 L CNN
+F 1 "470nF" H 2365 2555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 2288 2450 50  0001 C CNN
+F 3 "~" H 2250 2600 50  0001 C CNN
+	1    2250 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 3200 1900 3200
+	2250 2750 1900 2750
 Wire Wire Line
 	1900 4050 2250 4050
 Wire Wire Line
@@ -734,14 +734,14 @@ Wire Wire Line
 Connection ~ 2250 4050
 Wire Wire Line
 	2250 4050 2400 4050
-Connection ~ 1900 3200
+Connection ~ 1900 2750
 Wire Wire Line
-	1900 2800 2250 2800
+	1900 2350 2250 2350
 Wire Wire Line
-	2250 2900 2250 2800
+	2250 2450 2250 2350
 Wire Wire Line
-	2250 2800 2350 2800
-Connection ~ 2250 2800
+	2250 2350 2350 2350
+Connection ~ 2250 2350
 $Comp
 L Device:C C?
 U 1 1 619ADCB9
@@ -759,13 +759,13 @@ Wire Wire Line
 	2250 4450 1900 4450
 Text Label 2400 4050 0    50   ~ 0
 dipped_beam_ref
-Text Label 2350 2800 0    50   ~ 0
+Text Label 2350 2350 0    50   ~ 0
 batt_voltage_ref
-Text Label 4650 5500 2    50   ~ 0
+Text Label 4300 3700 2    50   ~ 0
 batt_voltage_ref
-Text Label 4650 5600 2    50   ~ 0
+Text Label 4300 3800 2    50   ~ 0
 dipped_beam_ref
-Text Label 4650 5400 2    50   ~ 0
+Text Label 4300 3600 2    50   ~ 0
 light_ref
 Text Label 8400 1850 2    50   ~ 0
 light_ref
@@ -812,4 +812,8 @@ Text Label 1750 6850 2    50   ~ 0
 light_ref
 Wire Wire Line
 	1900 6850 1750 6850
+Text Notes 1250 3150 0    50   ~ 0
+Battery Voltage Step down to 1.1v
+Text Notes 1250 4850 0    50   ~ 0
+Dipped Beam Req Step down to 1.1v
 $EndSCHEMATC
