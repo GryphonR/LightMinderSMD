@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name LightMinderSMD-rescue)(type Legacy)(uri ${KIPRJMOD}/LightMinderSMD-rescue.lib)(options "")(descr ""))
+)
