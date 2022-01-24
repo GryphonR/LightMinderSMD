@@ -2077,7 +2077,7 @@
     (property "Value" "20v TVS" (id 1) (at 235.6866 78.613 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "SamacSys_Parts:DO-214ACSMA" (id 2) (at 233.68 77.47 0)
+    (property "Footprint" "Diode_SMD:D_SMA" (id 2) (at 233.68 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://datasheet.lcsc.com/lcsc/1809211535_MDD-Microdiode-Electronics-SMBJ15CA_C113989.pdf" (id 3) (at 233.68 77.47 0)
@@ -2194,7 +2194,7 @@
     (pin "3" (uuid 50d55c19-c9e0-4949-befb-71b355502d30))
   )
 
-  (symbol (lib_id "Device:R") (at 232.41 26.67 0)
+  (symbol (lib_id "Device:R") (at 232.41 26.67 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000618fd111)
     (property "Reference" "R13" (id 0) (at 234.188 25.5016 0)
@@ -2213,7 +2213,7 @@
     (pin "2" (uuid 3ad02243-797e-465e-a7e3-3896009c81d8))
   )
 
-  (symbol (lib_id "Device:LED") (at 232.41 36.83 90)
+  (symbol (lib_id "Device:LED") (at 232.41 36.83 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000618fd117)
     (property "Reference" "D8" (id 0) (at 235.3818 35.8394 90)
@@ -2232,7 +2232,7 @@
     (pin "2" (uuid 260e98b8-d0b2-42bf-b7ef-765b82cfa705))
   )
 
-  (symbol (lib_id "Device:R") (at 219.71 26.67 0)
+  (symbol (lib_id "Device:R") (at 219.71 26.67 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000618fd11e)
     (property "Reference" "R11" (id 0) (at 221.488 25.5016 0)
@@ -2251,7 +2251,7 @@
     (pin "2" (uuid 07fdfdcc-4872-4067-8a18-6d2f0971ae29))
   )
 
-  (symbol (lib_id "Device:LED") (at 219.71 36.83 90)
+  (symbol (lib_id "Device:LED") (at 219.71 36.83 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000618fd124)
     (property "Reference" "D6" (id 0) (at 222.6818 35.8394 90)
@@ -2270,7 +2270,7 @@
     (pin "2" (uuid c5fb5074-7faf-4f0e-8c3e-1d288dc4b1aa))
   )
 
-  (symbol (lib_id "Device:R") (at 245.11 26.67 0)
+  (symbol (lib_id "Device:R") (at 245.11 26.67 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000618fd12c)
     (property "Reference" "R14" (id 0) (at 246.888 25.5016 0)
@@ -2289,7 +2289,7 @@
     (pin "2" (uuid 0f002426-23d5-470c-820f-9b55f9f15cc9))
   )
 
-  (symbol (lib_id "Device:LED") (at 245.11 36.83 90)
+  (symbol (lib_id "Device:LED") (at 245.11 36.83 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000618fd132)
     (property "Reference" "D9" (id 0) (at 248.0818 35.8394 90)
@@ -2308,7 +2308,7 @@
     (pin "2" (uuid 13bd4268-2a8f-422b-b1d2-60d75c072f0d))
   )
 
-  (symbol (lib_id "Device:R") (at 257.81 26.67 0)
+  (symbol (lib_id "Device:R") (at 257.81 26.67 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000618fd139)
     (property "Reference" "R15" (id 0) (at 259.588 25.5016 0)
@@ -2327,7 +2327,7 @@
     (pin "2" (uuid 4a741c40-9f3d-4b07-b532-f82c67991319))
   )
 
-  (symbol (lib_id "Device:LED") (at 257.81 36.83 90)
+  (symbol (lib_id "Device:LED") (at 257.81 36.83 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000618fd13f)
     (property "Reference" "D10" (id 0) (at 260.7818 35.8394 90)
@@ -2346,7 +2346,7 @@
     (pin "2" (uuid 7903a8f1-13fc-4424-9e8b-d3593523d5e3))
   )
 
-  (symbol (lib_id "power:GND") (at 238.76 44.45 0)
+  (symbol (lib_id "power:GND") (at 238.76 44.45 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000618fd148)
     (property "Reference" "#PWR0105" (id 0) (at 238.76 50.8 0)
@@ -2402,7 +2402,7 @@
     (pin "2" (uuid 28953164-f16d-4aac-9c70-9fa4bf40fe2a))
   )
 
-  (symbol (lib_id "Device:C") (at 59.69 88.9 0)
+  (symbol (lib_id "Device:C") (at 59.69 88.9 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006198c42d)
     (property "Reference" "C5" (id 0) (at 62.611 87.7316 0)
@@ -2421,7 +2421,7 @@
     (pin "2" (uuid f19bf37e-5617-4c0b-9d83-ca280e08ce6e))
   )
 
-  (symbol (lib_id "Device:C") (at 58.42 124.46 0)
+  (symbol (lib_id "Device:C") (at 58.42 124.46 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000619adcb9)
     (property "Reference" "C9" (id 0) (at 61.341 123.2916 0)
@@ -2671,7 +2671,7 @@
       (reference "D6") (unit 1) (value "LED") (footprint "LED_SMD:LED_0805_2012Metric_Castellated")
     )
     (path "/00000000-0000-0000-0000-0000618e275a"
-      (reference "D7") (unit 1) (value "20v TVS") (footprint "SamacSys_Parts:DO-214ACSMA")
+      (reference "D7") (unit 1) (value "20v TVS") (footprint "Diode_SMD:D_SMA")
     )
     (path "/00000000-0000-0000-0000-0000618fd117"
       (reference "D8") (unit 1) (value "LED") (footprint "LED_SMD:LED_0805_2012Metric_Castellated")
